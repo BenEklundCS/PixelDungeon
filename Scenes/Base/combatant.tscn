@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://daf516tuskaix"]
+
+[ext_resource type="PackedScene" uid="uid://cqud15ohaeig4" path="res://Scenes/Base/npc.tscn" id="1_xnin6"]
+[ext_resource type="Script" uid="uid://dja3medjo3brw" path="res://Scripts/Classes/combatant.gd" id="2_eavhv"]
+
+[node name="Combatant" instance=ExtResource("1_xnin6")]
+script = ExtResource("2_eavhv")
+hp = 0
+mana = 0
+armor = 0
+magic_armor = 0
+
+[node name="Hand" type="Node2D" parent="." index="2"]
+position = Vector2(8, 20)
+
+[node name="Weapon" type="Sprite2D" parent="Hand" index="0"]
+y_sort_enabled = true
+position = Vector2(6, -13)
+rotation = 0.443314
+scale = Vector2(0.75, 0.75)

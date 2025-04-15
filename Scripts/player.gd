@@ -1,6 +1,5 @@
 extends "res://Scripts/Classes/combatant.gd"
 
-var offset: int = 16
 var screen_size: Vector2 # game window size
 
 func _ready() -> void:
@@ -10,13 +9,13 @@ func _ready() -> void:
 func handle_animation() -> void:
 	# change animation
 	if (velocity == Vector2.ZERO):
-		$KnightAnimation.animation = "idle"
+		$Animation.animation = "idle"
 	else:
-		$KnightAnimation.animation = "run"
+		$Animation.animation = "run"
 
-	$KnightAnimation.play()
+	$Animation.play()
 	
-	flip($KnightAnimation)
+	flip($Animation)
 
 func move(delta: float) -> void:
 	# find movement Utils.direction to add to velocity
@@ -49,9 +48,3 @@ func _process(delta: float) -> void:
 
 	if Input.is_action_pressed("attack"):
 		attack()
-
-func _on_animated_sprite_2d_animation_changed() -> void:
-	if ($KnightAnimation.animation == "idle"):
-		$KnightAnimation.position.y += offset
-	elif ($KnightAnimation.animation == "run"):
-		$KnightAnimation.position.y -= offset

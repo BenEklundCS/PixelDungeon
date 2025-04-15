@@ -1,15 +1,12 @@
 [gd_scene load_steps=27 format=3 uid="uid://7uxdkwatij20"]
 
+[ext_resource type="PackedScene" uid="uid://daf516tuskaix" path="res://Scenes/Base/combatant.tscn" id="1_3smsa"]
 [ext_resource type="Script" uid="uid://b375r5stvsgg3" path="res://Scripts/player.gd" id="1_hqtel"]
 [ext_resource type="Texture2D" uid="uid://cj7t7bosmpcif" path="res://Entities/Npc's/Knight/Idle/Idle-Sheet.png" id="2_hqtel"]
 [ext_resource type="Texture2D" uid="uid://d3tyyu56gl168" path="res://Entities/Npc's/Knight/Death/Death-Sheet.png" id="2_sweqy"]
 [ext_resource type="Texture2D" uid="uid://b5wv2uia5od61" path="res://Entities/Npc's/Knight/Run/run_sheet.png" id="4_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://db8tk6gjok5nk" path="res://Weapons/Wood/Wood.png" id="5_fkybt"]
 [ext_resource type="AudioStream" uid="uid://csfaf4jgjakmq" path="res://SFX/WAV Files/SFX/Footsteps/Dirt/Dirt Walk 1.wav" id="6_x3wgy"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7lmhl"]
-radius = 7.2
-height = 35.4
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jxqw"]
 atlas = ExtResource("2_sweqy")
@@ -51,29 +48,29 @@ region = Rect2(64, 0, 32, 32)
 atlas = ExtResource("2_hqtel")
 region = Rect2(96, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_op7ga"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_3smsa"]
 atlas = ExtResource("4_2hs0m")
-region = Rect2(0, 0, 64, 64)
+region = Rect2(0, 32, 64, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_q13i1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_tx1dd"]
 atlas = ExtResource("4_2hs0m")
-region = Rect2(64, 0, 64, 64)
+region = Rect2(64, 32, 64, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_pylmc"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gymyn"]
 atlas = ExtResource("4_2hs0m")
-region = Rect2(128, 0, 64, 64)
+region = Rect2(128, 32, 64, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_pbfsw"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_pu2lt"]
 atlas = ExtResource("4_2hs0m")
-region = Rect2(192, 0, 64, 64)
+region = Rect2(192, 32, 64, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5tmop"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukyrk"]
 atlas = ExtResource("4_2hs0m")
-region = Rect2(256, 0, 64, 64)
+region = Rect2(256, 32, 64, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7ahtn"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dp3o"]
 atlas = ExtResource("4_2hs0m")
-region = Rect2(320, 0, 64, 64)
+region = Rect2(320, 32, 64, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7lmhl"]
 animations = [{
@@ -119,64 +116,54 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_op7ga")
+"texture": SubResource("AtlasTexture_3smsa")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_q13i1")
+"texture": SubResource("AtlasTexture_tx1dd")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_pylmc")
+"texture": SubResource("AtlasTexture_gymyn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_pbfsw")
+"texture": SubResource("AtlasTexture_pu2lt")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5tmop")
+"texture": SubResource("AtlasTexture_ukyrk")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7ahtn")
+"texture": SubResource("AtlasTexture_7dp3o")
 }],
 "loop": true,
 "name": &"run",
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fkybt"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_8erm5"]
 atlas = ExtResource("5_fkybt")
 region = Rect2(0.319305, 0, 14.4977, 48.241)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_x3wgy"]
-atlas = SubResource("AtlasTexture_fkybt")
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1ek2"]
+atlas = SubResource("AtlasTexture_8erm5")
 
-[node name="Player" type="CharacterBody2D"]
-y_sort_enabled = true
-collision_layer = 3
-collision_mask = 3
+[node name="Player" instance=ExtResource("1_3smsa")]
 script = ExtResource("1_hqtel")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.7, 19)
-rotation = 1.5708
-shape = SubResource("CapsuleShape2D_7lmhl")
-
-[node name="KnightAnimation" type="AnimatedSprite2D" parent="."]
-y_sort_enabled = true
-position = Vector2(0, 16)
+[node name="Animation" parent="." index="1"]
+position = Vector2(1, 0)
 sprite_frames = SubResource("SpriteFrames_7lmhl")
-animation = &"idle"
+animation = &"run"
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." index="2"]
 zoom = Vector2(0.75, 0.75)
 
-[node name="Weapon" type="Sprite2D" parent="."]
-y_sort_enabled = true
-position = Vector2(16, 8)
-rotation = 0.380482
-scale = Vector2(0.75, 0.75)
-texture = SubResource("AtlasTexture_x3wgy")
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="3"]
+position = Vector2(1, 0)
 stream = ExtResource("6_x3wgy")
 playback_type = 1
 
-[connection signal="animation_changed" from="KnightAnimation" to="." method="_on_animated_sprite_2d_animation_changed"]
+[node name="Hand" parent="." index="4"]
+position = Vector2(10, 4)
+
+[node name="Weapon" parent="Hand" index="0"]
+position = Vector2(6, -13)
+texture = SubResource("AtlasTexture_f1ek2")

@@ -1,6 +1,5 @@
 extends "res://Scripts/Classes/enemy.gd"
 
-var offset: int = 16
 var player: CharacterBody2D = null
 var target_position: Vector2 = Vector2(0, 0)
 var destination_reached: bool = false
@@ -8,14 +7,14 @@ var idle_timer: float = 0.0
 var idle_duration: float = 3.0
 
 func _ready() -> void:
-	$SkeletonAnimation.play()
+	$Animation.play()
 
 func _process(delta : float) -> void:
 	move(delta)
 
 func move(delta: float) -> void:
 	if is_close():
-		$SkeletonAnimation.animation = "idle_base"
+		$Animation.animation = "idle_base"
 		destination_reached = true
 		return
 	# Check if we've reached our current destination
@@ -27,8 +26,8 @@ func move(delta: float) -> void:
 	# Count down idle timer only when we've reached a destination
 	if destination_reached && idle_timer > 0:
 		idle_timer -= delta
-		$SkeletonAnimation.animation = "idle_base"
-		$SkeletonAnimation.play()
+		$Animation.animation = "idle_base"
+		$Animation.play()
 	
 	# Determine target based on circumstances
 	if player && in_range():
@@ -49,11 +48,11 @@ func move(delta: float) -> void:
 func handle_animation() -> void:
 	# change animation
 	if (velocity == Vector2.ZERO):
-		$SkeletonAnimation.animation = "idle_base"
+		$Animation.animation = "idle_base"
 	else:
-		$SkeletonAnimation.animation = "run_base"
-	$SkeletonAnimation.play()
-	flip($SkeletonAnimation)
+		$Animation.animation = "run_base"
+	$Animation.play()
+	flip($Animation)
 
 func set_player(p : CharacterBody2D) -> void:
 	self.player = p
@@ -64,9 +63,4 @@ func in_range() -> bool:
 func is_close() -> bool:
 	return player && position.distance_to(player.position) < 150
 	 
-func _on_skeleton_animation_animation_changed() -> void:
-	# correct for spritesheet inconsistencies
-	if ($SkeletonAnimation.animation == "idle_base"):
-		$SkeletonAnimation.position.y += offset
-	elif ($SkeletonAnimation.animation == "run_base"):
-		$SkeletonAnimation.position.y -= offset
+
