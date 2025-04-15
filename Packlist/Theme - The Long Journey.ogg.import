@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bhdtlnihff8h2"
+path="res://.godot/imported/Theme - The Long Journey.ogg-aacd912b7b13b82a30e71775bd4f7dd8.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - The Long Journey.ogg"
+dest_files=["res://.godot/imported/Theme - The Long Journey.ogg-aacd912b7b13b82a30e71775bd4f7dd8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

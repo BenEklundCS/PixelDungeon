@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://16lsot2u40h2"
+path="res://.godot/imported/Theme - The Realm Beyond Summit.ogg-ee6435762ca1c802e99197ee67ab1961.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - The Realm Beyond Summit.ogg"
+dest_files=["res://.godot/imported/Theme - The Realm Beyond Summit.ogg-ee6435762ca1c802e99197ee67ab1961.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

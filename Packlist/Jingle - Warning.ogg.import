@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://n5pff1m5pifi"
+path="res://.godot/imported/Jingle - Warning.ogg-4a1825734bf10dd91ac5f72e11559f8d.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Jingle - Warning.ogg"
+dest_files=["res://.godot/imported/Jingle - Warning.ogg-4a1825734bf10dd91ac5f72e11559f8d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

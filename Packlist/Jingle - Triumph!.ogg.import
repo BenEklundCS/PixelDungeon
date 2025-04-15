@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ciwfpsxrrnw6b"
+path="res://.godot/imported/Jingle - Triumph!.ogg-80dd5a3c12f78917ea3dcf764bc144b7.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Jingle - Triumph!.ogg"
+dest_files=["res://.godot/imported/Jingle - Triumph!.ogg-80dd5a3c12f78917ea3dcf764bc144b7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

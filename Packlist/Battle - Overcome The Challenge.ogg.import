@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bdcernbh34l4y"
+path="res://.godot/imported/Battle - Overcome The Challenge.ogg-553f4de1f6f688cc1c503578707d0ce2.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Battle - Overcome The Challenge.ogg"
+dest_files=["res://.godot/imported/Battle - Overcome The Challenge.ogg-553f4de1f6f688cc1c503578707d0ce2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

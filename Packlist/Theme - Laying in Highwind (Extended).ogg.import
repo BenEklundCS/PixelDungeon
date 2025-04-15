@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://q4ve1sa5gk66"
+path="res://.godot/imported/Theme - Laying in Highwind (Extended).ogg-acb17f811fc2fc991c837e0629645557.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - Laying in Highwind (Extended).ogg"
+dest_files=["res://.godot/imported/Theme - Laying in Highwind (Extended).ogg-acb17f811fc2fc991c837e0629645557.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

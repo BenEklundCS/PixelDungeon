@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://lngr0kjbgajw"
+path="res://.godot/imported/Scene - Through The Darkness.ogg-014d83a15538c16482d85c16ba2c2621.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - Through The Darkness.ogg"
+dest_files=["res://.godot/imported/Scene - Through The Darkness.ogg-014d83a15538c16482d85c16ba2c2621.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

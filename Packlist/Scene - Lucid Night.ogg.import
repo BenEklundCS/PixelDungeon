@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://1dd3cukmgq5l"
+path="res://.godot/imported/Scene - Lucid Night.ogg-5a5d2048ab1947084bfaab8a0be01c2e.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - Lucid Night.ogg"
+dest_files=["res://.godot/imported/Scene - Lucid Night.ogg-5a5d2048ab1947084bfaab8a0be01c2e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

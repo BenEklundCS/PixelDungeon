@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dus38uaxe6o10"
+path="res://.godot/imported/Scene - Missing Pieces (Remix 3).ogg-134fe26599d0738cf0d4416d8bcea8cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - Missing Pieces (Remix 3).ogg"
+dest_files=["res://.godot/imported/Scene - Missing Pieces (Remix 3).ogg-134fe26599d0738cf0d4416d8bcea8cd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

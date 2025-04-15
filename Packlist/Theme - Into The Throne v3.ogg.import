@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bodh73y2kp2c0"
+path="res://.godot/imported/Theme - Into The Throne v3.ogg-66a0f7ae226b1c43dce63fb0b12f628a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - Into The Throne v3.ogg"
+dest_files=["res://.godot/imported/Theme - Into The Throne v3.ogg-66a0f7ae226b1c43dce63fb0b12f628a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

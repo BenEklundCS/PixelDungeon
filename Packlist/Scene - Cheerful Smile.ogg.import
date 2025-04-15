@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://i4n0wwlnftk5"
+path="res://.godot/imported/Scene - Cheerful Smile.ogg-e245512b31d28719dfd1cf59121f16be.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - Cheerful Smile.ogg"
+dest_files=["res://.godot/imported/Scene - Cheerful Smile.ogg-e245512b31d28719dfd1cf59121f16be.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

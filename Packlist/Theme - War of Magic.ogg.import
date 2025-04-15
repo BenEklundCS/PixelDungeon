@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d274nqj04d7xm"
+path="res://.godot/imported/Theme - War of Magic.ogg-94d93c1191e09e50e5d15e7dbe49c308.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - War of Magic.ogg"
+dest_files=["res://.godot/imported/Theme - War of Magic.ogg-94d93c1191e09e50e5d15e7dbe49c308.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

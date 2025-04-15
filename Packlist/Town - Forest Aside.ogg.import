@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5xqwtqalj4s1"
+path="res://.godot/imported/Town - Forest Aside.ogg-42194065c03853a4e588dba16ad475f0.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Town - Forest Aside.ogg"
+dest_files=["res://.godot/imported/Town - Forest Aside.ogg-42194065c03853a4e588dba16ad475f0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

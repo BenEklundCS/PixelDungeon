@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://fjrpfama5no7"
+path="res://.godot/imported/Scene - I'm still waiting.ogg-78335cd7650321dd2c3f4e657c10327e.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - I'm still waiting.ogg"
+dest_files=["res://.godot/imported/Scene - I'm still waiting.ogg-78335cd7650321dd2c3f4e657c10327e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

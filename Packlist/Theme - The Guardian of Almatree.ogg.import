@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://btc7xogus3mpm"
+path="res://.godot/imported/Theme - The Guardian of Almatree.ogg-eaf9477355f9eb71a9ba28210b3eedc3.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - The Guardian of Almatree.ogg"
+dest_files=["res://.godot/imported/Theme - The Guardian of Almatree.ogg-eaf9477355f9eb71a9ba28210b3eedc3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

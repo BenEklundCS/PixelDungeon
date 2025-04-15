@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b1conl8iroxy4"
+path="res://.godot/imported/Theme - The Northern Folks.ogg-9ac85f5496b8316c062e9c6ff567c1dc.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - The Northern Folks.ogg"
+dest_files=["res://.godot/imported/Theme - The Northern Folks.ogg-9ac85f5496b8316c062e9c6ff567c1dc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

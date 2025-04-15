@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b22oto5i3v0cf"
+path="res://.godot/imported/Field - World of Almanera.ogg-be7972e331063f35efec7bb57f4c60ad.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Field - World of Almanera.ogg"
+dest_files=["res://.godot/imported/Field - World of Almanera.ogg-be7972e331063f35efec7bb57f4c60ad.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

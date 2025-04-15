@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dxdx3f2rq3n8s"
+path="res://.godot/imported/Battle - Magic Battle.ogg-a27c2290ab18ef22678ad4d98574ca4f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Battle - Magic Battle.ogg"
+dest_files=["res://.godot/imported/Battle - Magic Battle.ogg-a27c2290ab18ef22678ad4d98574ca4f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

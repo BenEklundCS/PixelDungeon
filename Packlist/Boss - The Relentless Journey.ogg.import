@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://1sxue40cv2wx"
+path="res://.godot/imported/Boss - The Relentless Journey.ogg-c582e66b3991a19dc21544fb9d4cca6d.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Boss - The Relentless Journey.ogg"
+dest_files=["res://.godot/imported/Boss - The Relentless Journey.ogg-c582e66b3991a19dc21544fb9d4cca6d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

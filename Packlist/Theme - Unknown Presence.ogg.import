@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dftuiqpln4fge"
+path="res://.godot/imported/Theme - Unknown Presence.ogg-5d66a91a649811ac007066d06df937f7.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - Unknown Presence.ogg"
+dest_files=["res://.godot/imported/Theme - Unknown Presence.ogg-5d66a91a649811ac007066d06df937f7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

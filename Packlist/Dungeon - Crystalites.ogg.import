@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://chirquyj5a86l"
+path="res://.godot/imported/Dungeon - Crystalites.ogg-38009b7d8a6d57d69564184183daf86c.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Dungeon - Crystalites.ogg"
+dest_files=["res://.godot/imported/Dungeon - Crystalites.ogg-38009b7d8a6d57d69564184183daf86c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://baygl5qkkt12k"
+path="res://.godot/imported/Scene - Beneath The Moonlight.ogg-d84cfd016d7ebc4536fd0e0d7d8c06cb.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - Beneath The Moonlight.ogg"
+dest_files=["res://.godot/imported/Scene - Beneath The Moonlight.ogg-d84cfd016d7ebc4536fd0e0d7d8c06cb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bvg3w7pmrgakg"
+path="res://.godot/imported/Town - Town Symphony.ogg-3dc2ff8b4f3785e71943c44353c61961.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Town - Town Symphony.ogg"
+dest_files=["res://.godot/imported/Town - Town Symphony.ogg-3dc2ff8b4f3785e71943c44353c61961.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

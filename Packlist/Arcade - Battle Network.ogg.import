@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dbu03k0ox8wds"
+path="res://.godot/imported/Arcade - Battle Network.ogg-22c327d5f8681a90998940473d513140.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Arcade - Battle Network.ogg"
+dest_files=["res://.godot/imported/Arcade - Battle Network.ogg-22c327d5f8681a90998940473d513140.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

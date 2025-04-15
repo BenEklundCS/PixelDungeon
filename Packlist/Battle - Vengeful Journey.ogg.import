@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://btrlunplrm7d0"
+path="res://.godot/imported/Battle - Vengeful Journey.ogg-0e3d6b6bb10a0da14706b4276bfbd4da.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Battle - Vengeful Journey.ogg"
+dest_files=["res://.godot/imported/Battle - Vengeful Journey.ogg-0e3d6b6bb10a0da14706b4276bfbd4da.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

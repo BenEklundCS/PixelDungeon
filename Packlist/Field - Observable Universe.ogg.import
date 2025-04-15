@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dvcw5mqhsndu7"
+path="res://.godot/imported/Field - Observable Universe.ogg-32387f016abead59ee67b6ec9a2af7fb.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Field - Observable Universe.ogg"
+dest_files=["res://.godot/imported/Field - Observable Universe.ogg-32387f016abead59ee67b6ec9a2af7fb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

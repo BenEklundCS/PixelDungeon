@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://desr2k0xqpic1"
+path="res://.godot/imported/Theme - Pioneers.ogg-0ffef7259041698358bc9ec4ea077119.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - Pioneers.ogg"
+dest_files=["res://.godot/imported/Theme - Pioneers.ogg-0ffef7259041698358bc9ec4ea077119.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

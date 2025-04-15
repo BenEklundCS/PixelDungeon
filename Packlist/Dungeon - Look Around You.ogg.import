@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b6ylu0a4vc83i"
+path="res://.godot/imported/Dungeon - Look Around You.ogg-eeca02e7d9f91dc97106cef9105e9415.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Dungeon - Look Around You.ogg"
+dest_files=["res://.godot/imported/Dungeon - Look Around You.ogg-eeca02e7d9f91dc97106cef9105e9415.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

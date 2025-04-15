@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cfbwye42i3bpt"
+path="res://.godot/imported/Dungeon - Deception Dungeon.ogg-78c6e38a408c7426c0f81e72a65fe08a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Dungeon - Deception Dungeon.ogg"
+dest_files=["res://.godot/imported/Dungeon - Deception Dungeon.ogg-78c6e38a408c7426c0f81e72a65fe08a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

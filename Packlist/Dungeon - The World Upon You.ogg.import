@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dpxrvmyeq835g"
+path="res://.godot/imported/Dungeon - The World Upon You.ogg-b4c7ef727d16ad59276cd5b250a7d91f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Dungeon - The World Upon You.ogg"
+dest_files=["res://.godot/imported/Dungeon - The World Upon You.ogg-b4c7ef727d16ad59276cd5b250a7d91f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

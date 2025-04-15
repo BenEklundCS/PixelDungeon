@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://belrbn2q46giv"
+path="res://.godot/imported/Town - Good Morning.ogg-6fcd93c72a9127be4dc0d6a1c77451c5.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Town - Good Morning.ogg"
+dest_files=["res://.godot/imported/Town - Good Morning.ogg-6fcd93c72a9127be4dc0d6a1c77451c5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

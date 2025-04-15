@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://d02r463dsxqi7"]
+
+[ext_resource type="PackedScene" uid="uid://cqud15ohaeig4" path="res://Scenes/npc.tscn" id="1_hghv2"]
+[ext_resource type="Script" uid="uid://dl7d42hmvum4k" path="res://Scripts/enemy.gd" id="2_1f0kj"]
+
+[node name="NPC" instance=ExtResource("1_hghv2")]
+script = ExtResource("2_1f0kj")
+hp = 0
+mana = 0
+armor = 0

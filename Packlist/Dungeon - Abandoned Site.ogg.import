@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://gc2mtavcr4uk"
+path="res://.godot/imported/Dungeon - Abandoned Site.ogg-62c9c34f38807630b0342c1c2f63d097.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Dungeon - Abandoned Site.ogg"
+dest_files=["res://.godot/imported/Dungeon - Abandoned Site.ogg-62c9c34f38807630b0342c1c2f63d097.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

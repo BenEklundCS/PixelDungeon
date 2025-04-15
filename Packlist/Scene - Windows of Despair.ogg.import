@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://e5j0h86xfp03"
+path="res://.godot/imported/Scene - Windows of Despair.ogg-9be8a56633b4b18e4013550fb82d3b4b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - Windows of Despair.ogg"
+dest_files=["res://.godot/imported/Scene - Windows of Despair.ogg-9be8a56633b4b18e4013550fb82d3b4b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

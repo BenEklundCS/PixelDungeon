@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://j0ittingmcd8"
+path="res://.godot/imported/Field - Nebula Cloud.ogg-0fd5dcaa26dc567502cd560d654759d8.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Field - Nebula Cloud.ogg"
+dest_files=["res://.godot/imported/Field - Nebula Cloud.ogg-0fd5dcaa26dc567502cd560d654759d8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

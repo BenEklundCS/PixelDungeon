@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://man4nsajhvx6"
+path="res://.godot/imported/Field - Joyful Voyage.ogg-ea2eb53d126485f8eed324ec1c27194c.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Field - Joyful Voyage.ogg"
+dest_files=["res://.godot/imported/Field - Joyful Voyage.ogg-ea2eb53d126485f8eed324ec1c27194c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

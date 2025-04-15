@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bey0hywe62jrb"
+path="res://.godot/imported/Scene - Ascending Moment.ogg-8a8340d997e5e9f63e161e4f6a8959dc.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - Ascending Moment.ogg"
+dest_files=["res://.godot/imported/Scene - Ascending Moment.ogg-8a8340d997e5e9f63e161e4f6a8959dc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

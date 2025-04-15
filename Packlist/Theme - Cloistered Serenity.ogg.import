@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dgnjrnbdpbx6w"
+path="res://.godot/imported/Theme - Cloistered Serenity.ogg-854cc8e122d915a8223e2d5567d968fe.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - Cloistered Serenity.ogg"
+dest_files=["res://.godot/imported/Theme - Cloistered Serenity.ogg-854cc8e122d915a8223e2d5567d968fe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b6wkcamtv4gjl"
+path="res://.godot/imported/Theme - Cloudpeak Temple.ogg-116bc8b4f79218f01dd645c6c18b4765.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - Cloudpeak Temple.ogg"
+dest_files=["res://.godot/imported/Theme - Cloudpeak Temple.ogg-116bc8b4f79218f01dd645c6c18b4765.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

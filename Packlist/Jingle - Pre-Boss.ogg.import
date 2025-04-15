@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c2k4mk2rvfn38"
+path="res://.godot/imported/Jingle - Pre-Boss.ogg-2c01d5ea9e632cfef62895b63c5fad5b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Jingle - Pre-Boss.ogg"
+dest_files=["res://.godot/imported/Jingle - Pre-Boss.ogg-2c01d5ea9e632cfef62895b63c5fad5b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

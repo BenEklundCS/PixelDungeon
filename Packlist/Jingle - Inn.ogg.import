@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d4h4urt2yfmh4"
+path="res://.godot/imported/Jingle - Inn.ogg-223bff0cbcd7521cb0f36b4dc06688d0.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Jingle - Inn.ogg"
+dest_files=["res://.godot/imported/Jingle - Inn.ogg-223bff0cbcd7521cb0f36b4dc06688d0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

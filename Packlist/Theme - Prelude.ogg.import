@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ddnrlmwx8pft3"
+path="res://.godot/imported/Theme - Prelude.ogg-26c8f6ea6ab8840abfd1150d8ad34162.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - Prelude.ogg"
+dest_files=["res://.godot/imported/Theme - Prelude.ogg-26c8f6ea6ab8840abfd1150d8ad34162.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dahcc5ftlnkjw"
+path="res://.godot/imported/Battle - Into The Battle (Drumless).ogg-931dbb4e430b3cd9eef1681b46d8f270.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Battle - Into The Battle (Drumless).ogg"
+dest_files=["res://.godot/imported/Battle - Into The Battle (Drumless).ogg-931dbb4e430b3cd9eef1681b46d8f270.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

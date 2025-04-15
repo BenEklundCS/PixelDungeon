@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://nh5expk8vakr"
+path="res://.godot/imported/Scene - The Long Journey.ogg-c5e8b520372ed55744cfe3b7cbd6a40c.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - The Long Journey.ogg"
+dest_files=["res://.godot/imported/Scene - The Long Journey.ogg-c5e8b520372ed55744cfe3b7cbd6a40c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

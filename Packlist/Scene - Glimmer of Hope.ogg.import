@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cg8qg0ohlhx3c"
+path="res://.godot/imported/Scene - Glimmer of Hope.ogg-0d092c6ced6b34c6295e3847a1a03ffe.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - Glimmer of Hope.ogg"
+dest_files=["res://.godot/imported/Scene - Glimmer of Hope.ogg-0d092c6ced6b34c6295e3847a1a03ffe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0sb7k4n42acv"
+path="res://.godot/imported/Arcade - Running.ogg-8a2a45ba8febe12336ba526ec535ecaa.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Arcade - Running.ogg"
+dest_files=["res://.godot/imported/Arcade - Running.ogg-8a2a45ba8febe12336ba526ec535ecaa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

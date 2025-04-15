@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bctls431ba4to"
+path="res://.godot/imported/Dungeon - Spooky.ogg-0d65d97b3dfbdbfb5a3c00683f477cf8.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Dungeon - Spooky.ogg"
+dest_files=["res://.godot/imported/Dungeon - Spooky.ogg-0d65d97b3dfbdbfb5a3c00683f477cf8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

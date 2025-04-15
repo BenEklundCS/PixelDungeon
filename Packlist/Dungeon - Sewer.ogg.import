@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d216isadr6pb"
+path="res://.godot/imported/Dungeon - Sewer.ogg-36aef7a03403f02ce4f7cabab4ca6bed.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Dungeon - Sewer.ogg"
+dest_files=["res://.godot/imported/Dungeon - Sewer.ogg-36aef7a03403f02ce4f7cabab4ca6bed.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

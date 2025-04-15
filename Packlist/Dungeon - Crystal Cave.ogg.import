@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b15hqpnj2ofnx"
+path="res://.godot/imported/Dungeon - Crystal Cave.ogg-6d5d394917d2d6eb63f840ce9d88f887.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Dungeon - Crystal Cave.ogg"
+dest_files=["res://.godot/imported/Dungeon - Crystal Cave.ogg-6d5d394917d2d6eb63f840ce9d88f887.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

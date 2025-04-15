@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c7nynpksg0mm4"
+path="res://.godot/imported/Scene - Prepare For Tomorrow.ogg-43986939d97d37657594b017e266eb20.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - Prepare For Tomorrow.ogg"
+dest_files=["res://.godot/imported/Scene - Prepare For Tomorrow.ogg-43986939d97d37657594b017e266eb20.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

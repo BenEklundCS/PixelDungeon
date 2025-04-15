@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://db0yvq22u5dta"
+path="res://.godot/imported/Scene - Do You Remember Me.ogg-6633cb608ff6eef01b74059919082e6c.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - Do You Remember Me.ogg"
+dest_files=["res://.godot/imported/Scene - Do You Remember Me.ogg-6633cb608ff6eef01b74059919082e6c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

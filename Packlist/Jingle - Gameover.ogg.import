@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cvuj20nfqsdai"
+path="res://.godot/imported/Jingle - Gameover.ogg-8711b8d3693cc71eca3504b351d41598.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Jingle - Gameover.ogg"
+dest_files=["res://.godot/imported/Jingle - Gameover.ogg-8711b8d3693cc71eca3504b351d41598.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

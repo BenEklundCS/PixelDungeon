@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bolmmvksd4v8t"
+path="res://.godot/imported/Theme - Once Upon a Time.ogg-9bdf3e8a8809b11e41ec1deaa1c4da2f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - Once Upon a Time.ogg"
+dest_files=["res://.godot/imported/Theme - Once Upon a Time.ogg-9bdf3e8a8809b11e41ec1deaa1c4da2f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

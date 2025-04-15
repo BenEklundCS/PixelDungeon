@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dw138wg708ibf"
+path="res://.godot/imported/Forest - Forest Journey.ogg-ffa538e602ea3436ca3531ade53ca608.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Forest - Forest Journey.ogg"
+dest_files=["res://.godot/imported/Forest - Forest Journey.ogg-ffa538e602ea3436ca3531ade53ca608.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

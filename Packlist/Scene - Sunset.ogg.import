@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b15p8q2owe1lf"
+path="res://.godot/imported/Scene - Sunset.ogg-002a49fb2bca3f86ccda32da821361a2.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - Sunset.ogg"
+dest_files=["res://.godot/imported/Scene - Sunset.ogg-002a49fb2bca3f86ccda32da821361a2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

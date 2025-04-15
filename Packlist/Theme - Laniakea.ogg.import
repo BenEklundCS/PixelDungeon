@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cvwqs6yd54y3w"
+path="res://.godot/imported/Theme - Laniakea.ogg-4227ac34df552bb0866d8dec251015e0.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Theme - Laniakea.ogg"
+dest_files=["res://.godot/imported/Theme - Laniakea.ogg-4227ac34df552bb0866d8dec251015e0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

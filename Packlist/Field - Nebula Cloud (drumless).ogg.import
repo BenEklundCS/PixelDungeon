@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://y0bowianc3ah"
+path="res://.godot/imported/Field - Nebula Cloud (drumless).ogg-4f330a1c5832b0d8cd8a9e8f6aea0ad9.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Field - Nebula Cloud (drumless).ogg"
+dest_files=["res://.godot/imported/Field - Nebula Cloud (drumless).ogg-4f330a1c5832b0d8cd8a9e8f6aea0ad9.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ceqom1mfyq72b"
+path="res://.godot/imported/Jingle - Conclusion.ogg-029950d32d5bdbf0610568088d952657.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Jingle - Conclusion.ogg"
+dest_files=["res://.godot/imported/Jingle - Conclusion.ogg-029950d32d5bdbf0610568088d952657.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

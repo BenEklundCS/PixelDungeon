@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://clobvdvw2dyyb"
+path="res://.godot/imported/Jingle - Jingle of Memories.ogg-5344389e82e0357bd769e736cfcb895f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Jingle - Jingle of Memories.ogg"
+dest_files=["res://.godot/imported/Jingle - Jingle of Memories.ogg-5344389e82e0357bd769e736cfcb895f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bfuhsifmbqpt5"
+path="res://.godot/imported/Dungeon - Ancient Light.ogg-9fd8239d0d87df3ce64fdcb09fccb43b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Dungeon - Ancient Light.ogg"
+dest_files=["res://.godot/imported/Dungeon - Ancient Light.ogg-9fd8239d0d87df3ce64fdcb09fccb43b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

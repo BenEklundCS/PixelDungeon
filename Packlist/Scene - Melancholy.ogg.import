@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://6sh176ykt68y"
+path="res://.godot/imported/Scene - Melancholy.ogg-9d2089f0ff25da1597e27117f9c16cf6.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Scene - Melancholy.ogg"
+dest_files=["res://.godot/imported/Scene - Melancholy.ogg-9d2089f0ff25da1597e27117f9c16cf6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

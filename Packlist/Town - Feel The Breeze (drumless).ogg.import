@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ca30gxddo2nfd"
+path="res://.godot/imported/Town - Feel The Breeze (drumless).ogg-94b806b177207fbf94c9d84afa07013c.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Town - Feel The Breeze (drumless).ogg"
+dest_files=["res://.godot/imported/Town - Feel The Breeze (drumless).ogg-94b806b177207fbf94c9d84afa07013c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

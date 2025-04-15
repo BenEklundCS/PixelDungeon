@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c2u3oslqbwwdv"
+path="res://.godot/imported/Arcade - Flight.ogg-043a29f7415881204de67348b836daae.oggvorbisstr"
+
+[deps]
+
+source_file="res://Packlist/Arcade - Flight.ogg"
+dest_files=["res://.godot/imported/Arcade - Flight.ogg-043a29f7415881204de67348b836daae.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
