@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c8ka7fwtod583"
+path="res://.godot/imported/Firebuff 1.ogg-a2ddf8f095f00eb09a5f7a00ea472efd.oggvorbisstr"
+
+[deps]
+
+source_file="res://SFX/OGG Files/SFX/Spells/Firebuff 1.ogg"
+dest_files=["res://.godot/imported/Firebuff 1.ogg-a2ddf8f095f00eb09a5f7a00ea472efd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

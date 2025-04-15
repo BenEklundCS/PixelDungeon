@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dxeq0if5vktsw"
+path="res://.godot/imported/Sea Rain.wav-83b50025a99731518f48f96259f6bd4e.sample"
+
+[deps]
+
+source_file="res://SFX/WAV Files/BGS Loops/Sea/Sea Rain.wav"
+dest_files=["res://.godot/imported/Sea Rain.wav-83b50025a99731518f48f96259f6bd4e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

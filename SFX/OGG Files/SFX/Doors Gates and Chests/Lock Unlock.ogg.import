@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dl2skcceke05c"
+path="res://.godot/imported/Lock Unlock.ogg-c9a88a8483bed95b5237f564fb185360.oggvorbisstr"
+
+[deps]
+
+source_file="res://SFX/OGG Files/SFX/Doors Gates and Chests/Lock Unlock.ogg"
+dest_files=["res://.godot/imported/Lock Unlock.ogg-c9a88a8483bed95b5237f564fb185360.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

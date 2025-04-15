@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://mn4pl5njom58"
+path="res://.godot/imported/Gate Open.wav-68ccfe427a5f636c4d5c093948e45430.sample"
+
+[deps]
+
+source_file="res://SFX/WAV Files/SFX/Doors Gates and Chests/Gate Open.wav"
+dest_files=["res://.godot/imported/Gate Open.wav-68ccfe427a5f636c4d5c093948e45430.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

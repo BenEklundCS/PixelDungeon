@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://kowyfbunr8ph"
+path="res://.godot/imported/Ice Wall 1.ogg-ae8adb0973cd270c746debcfea235012.oggvorbisstr"
+
+[deps]
+
+source_file="res://SFX/OGG Files/SFX/Spells/Ice Wall 1.ogg"
+dest_files=["res://.godot/imported/Ice Wall 1.ogg-ae8adb0973cd270c746debcfea235012.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

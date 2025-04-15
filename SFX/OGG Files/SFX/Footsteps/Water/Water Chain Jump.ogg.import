@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://du03ryy2pndau"
+path="res://.godot/imported/Water Chain Jump.ogg-9ac979199d372a7f042e1c9ca404feea.oggvorbisstr"
+
+[deps]
+
+source_file="res://SFX/OGG Files/SFX/Footsteps/Water/Water Chain Jump.ogg"
+dest_files=["res://.godot/imported/Water Chain Jump.ogg-9ac979199d372a7f042e1c9ca404feea.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

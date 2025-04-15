@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://banvpe4uxloka"
+path="res://.godot/imported/Water Land.ogg-edf19177d02634fc57fbc258ec56b23a.oggvorbisstr"
+
+[deps]
+
+source_file="res://SFX/OGG Files/SFX/Footsteps/Water/Water Land.ogg"
+dest_files=["res://.godot/imported/Water Land.ogg-edf19177d02634fc57fbc258ec56b23a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

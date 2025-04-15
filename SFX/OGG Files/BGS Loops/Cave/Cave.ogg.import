@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://brex8if01hvf8"
+path="res://.godot/imported/Cave.ogg-8ac2d32644585a4442e403e9261ab466.oggvorbisstr"
+
+[deps]
+
+source_file="res://SFX/OGG Files/BGS Loops/Cave/Cave.ogg"
+dest_files=["res://.godot/imported/Cave.ogg-8ac2d32644585a4442e403e9261ab466.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

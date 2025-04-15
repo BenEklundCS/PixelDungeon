@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c0u6pbwbocoul"
+path="res://.godot/imported/Wood Land.ogg-5e1e7dd172027c6595907089403af70c.oggvorbisstr"
+
+[deps]
+
+source_file="res://SFX/OGG Files/SFX/Footsteps/Wood/Wood Land.ogg"
+dest_files=["res://.godot/imported/Wood Land.ogg-5e1e7dd172027c6595907089403af70c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

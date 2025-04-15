@@ -1,4 +1,4 @@
-extends "res://Scripts/combatant.gd"
+extends "res://Scripts/Classes/combatant.gd"
 
 var offset: int = 16
 var screen_size: Vector2 # game window size

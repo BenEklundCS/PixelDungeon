@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cpq4quelnmg26"
+path="res://.godot/imported/Light Torch 1.ogg-5b9fc0f5253bf10f26100d10b07542cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://SFX/OGG Files/SFX/Torch/Light Torch 1.ogg"
+dest_files=["res://.godot/imported/Light Torch 1.ogg-5b9fc0f5253bf10f26100d10b07542cd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

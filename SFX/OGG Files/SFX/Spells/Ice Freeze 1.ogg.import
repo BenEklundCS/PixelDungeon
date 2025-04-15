@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bgj15tryi7m57"
+path="res://.godot/imported/Ice Freeze 1.ogg-60b0b62721a330bb164974fd6a39ea1a.oggvorbisstr"
+
+[deps]
+
+source_file="res://SFX/OGG Files/SFX/Spells/Ice Freeze 1.ogg"
+dest_files=["res://.godot/imported/Ice Freeze 1.ogg-60b0b62721a330bb164974fd6a39ea1a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

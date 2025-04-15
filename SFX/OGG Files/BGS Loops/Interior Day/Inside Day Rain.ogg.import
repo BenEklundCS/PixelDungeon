@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dyc1vhfrxshnw"
+path="res://.godot/imported/Inside Day Rain.ogg-5ccc08ee4dd85b5bb79d1cc0a4baee8e.oggvorbisstr"
+
+[deps]
+
+source_file="res://SFX/OGG Files/BGS Loops/Interior Day/Inside Day Rain.ogg"
+dest_files=["res://.godot/imported/Inside Day Rain.ogg-5ccc08ee4dd85b5bb79d1cc0a4baee8e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

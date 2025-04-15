@@ -1,0 +1,119 @@
+[gd_scene load_steps=17 format=3 uid="uid://0bxyy66opfwm"]
+
+[ext_resource type="PackedScene" uid="uid://cqud15ohaeig4" path="res://Scenes/Base/npc.tscn" id="1_uny1q"]
+[ext_resource type="Script" uid="uid://q805cykq6mog" path="res://Scripts/NPCs/dog.gd" id="2_rviwe"]
+[ext_resource type="Texture2D" uid="uid://bp5af37tj38hn" path="res://Entities/Npc's/dog.png" id="2_y1yv2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6yb15"]
+atlas = ExtResource("2_y1yv2")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_usue5"]
+atlas = ExtResource("2_y1yv2")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12smy"]
+atlas = ExtResource("2_y1yv2")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkkfr"]
+atlas = ExtResource("2_y1yv2")
+region = Rect2(0, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qe13"]
+atlas = ExtResource("2_y1yv2")
+region = Rect2(48, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_llnvy"]
+atlas = ExtResource("2_y1yv2")
+region = Rect2(96, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dam1u"]
+atlas = ExtResource("2_y1yv2")
+region = Rect2(0, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcuxi"]
+atlas = ExtResource("2_y1yv2")
+region = Rect2(48, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sy2b1"]
+atlas = ExtResource("2_y1yv2")
+region = Rect2(96, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k0nkm"]
+atlas = ExtResource("2_y1yv2")
+region = Rect2(0, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0swk1"]
+atlas = ExtResource("2_y1yv2")
+region = Rect2(48, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pcryx"]
+atlas = ExtResource("2_y1yv2")
+region = Rect2(96, 144, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y1yv2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6yb15")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_usue5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12smy")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkkfr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qe13")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_llnvy")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dam1u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kcuxi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sy2b1")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k0nkm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0swk1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pcryx")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]
+
+[node name="Dog" instance=ExtResource("1_uny1q")]
+script = ExtResource("2_rviwe")
+
+[node name="Animation" parent="." index="1"]
+sprite_frames = SubResource("SpriteFrames_y1yv2")
+animation = &"right"
