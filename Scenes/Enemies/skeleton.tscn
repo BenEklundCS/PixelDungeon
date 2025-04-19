@@ -98,6 +98,8 @@ atlas = SubResource("AtlasTexture_8erm5")
 
 [node name="Skeleton" instance=ExtResource("1_j60fd")]
 script = ExtResource("1_vd5x3")
+swing_cooldown = 2.0
+base_damage = 15
 
 [node name="Animation" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_ks230")
@@ -109,3 +111,11 @@ position = Vector2(8, 5)
 [node name="Weapon" parent="Hand" index="0"]
 position = Vector2(6, -14)
 texture = SubResource("AtlasTexture_f1ek2")
+
+[node name="HitBox" parent="." index="3"]
+collision_layer = 2
+
+[node name="CollisionShape2D" parent="HurtBox" index="0"]
+position = Vector2(27, 0)
+
+[connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]

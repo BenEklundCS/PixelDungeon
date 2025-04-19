@@ -1,4 +1,5 @@
 extends "res://Scripts/Classes/enemy.gd"
+const Player = preload("res://Scripts//player.gd")
 
 var player: CharacterBody2D = null
 var target_position: Vector2 = Vector2(0, 0)
@@ -6,11 +7,40 @@ var destination_reached: bool = false
 var idle_timer: float = 0.0
 var idle_duration: float = 3.0
 
+
+@export var swing_cooldown: float = 2.0
+var _cooldown: float = swing_cooldown
+
+
 func _ready() -> void:
 	$Animation.play()
 
 func _process(delta : float) -> void:
 	move(delta)
+	attack(delta)
+
+	super._process(delta)
+
+# attack the player if the cooldown has expired, and if they're close enough
+func attack(delta):
+	# handle cooldown timer
+
+	# if the cooldown is above 0, subtract delta from it to move it down to 0
+	if _cooldown > 0.0:
+		_cooldown -= delta
+
+	var bodies: Array[Node2D] = check_for_hits()
+	if bodies:
+		for body in bodies:
+			if body is Player:
+				body.hurt(base_damage, Utils.damage_type.PHYSICAL)
+
+	# check if the player is close enough to swing
+	if is_close():
+		# if the cooldown has expired swing
+		if _cooldown <= 0.0:
+			super.swing(2)
+			_cooldown = swing_cooldown
 
 func move(delta: float) -> void:
 	if is_close():
@@ -61,6 +91,7 @@ func in_range() -> bool:
 	return player && position.distance_to(player.position) < 500 && position.distance_to(player.position) > 150
 
 func is_close() -> bool:
-	return player && position.distance_to(player.position) < 150
-	 
+	return player && position.distance_to(player.position) < 300
 
+func _on_hurt_box_body_entered(body: Node2D) -> void:
+	pass

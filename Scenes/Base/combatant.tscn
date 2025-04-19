@@ -1,20 +1,37 @@
-[gd_scene load_steps=3 format=3 uid="uid://daf516tuskaix"]
+[gd_scene load_steps=5 format=3 uid="uid://daf516tuskaix"]
 
 [ext_resource type="PackedScene" uid="uid://cqud15ohaeig4" path="res://Scenes/Base/npc.tscn" id="1_xnin6"]
 [ext_resource type="Script" uid="uid://dja3medjo3brw" path="res://Scripts/Classes/combatant.gd" id="2_eavhv"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eavhv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oyagx"]
+
 [node name="Combatant" instance=ExtResource("1_xnin6")]
 script = ExtResource("2_eavhv")
-hp = 0
-mana = 0
+hp = 50
+mana = 10
 armor = 0
 magic_armor = 0
+base_damage = 30
 
 [node name="Hand" type="Node2D" parent="." index="2"]
 position = Vector2(8, 20)
 
 [node name="Weapon" type="Sprite2D" parent="Hand" index="0"]
 y_sort_enabled = true
-position = Vector2(6, -13)
+position = Vector2(7, -11)
 rotation = 0.443314
 scale = Vector2(0.75, 0.75)
+
+[node name="HitBox" type="Area2D" parent="." index="3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" index="0"]
+shape = SubResource("RectangleShape2D_eavhv")
+
+[node name="HurtBox" type="Area2D" parent="." index="4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" index="0"]
+position = Vector2(26, 0)
+scale = Vector2(1.5, 1.5)
+shape = SubResource("RectangleShape2D_oyagx")

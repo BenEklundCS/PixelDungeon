@@ -14,6 +14,7 @@ var facing: int = Utils.direction.RIGHT # Default direction
 @export var speed: int = 200 # Default speed
 
 
+
 # Base movement functionality for moving towards a position
 func move_towards(target_position: Vector2, delta: float, up_animations: bool) -> void:
 	velocity = Vector2.ZERO
