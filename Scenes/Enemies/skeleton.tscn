@@ -99,11 +99,12 @@ atlas = SubResource("AtlasTexture_8erm5")
 [node name="Skeleton" instance=ExtResource("1_j60fd")]
 script = ExtResource("1_vd5x3")
 swing_cooldown = 2.0
+move_range = 300
 base_damage = 15
 
 [node name="Animation" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_ks230")
-animation = &"run_base"
+animation = &"idle_base"
 
 [node name="Hand" parent="." index="2"]
 position = Vector2(8, 5)

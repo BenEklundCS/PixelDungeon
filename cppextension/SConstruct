@@ -1,0 +1,53 @@
+import os
+from SCons.Script import DefaultEnvironment, ARGUMENTS
+
+# set up environment
+env = DefaultEnvironment()
+
+# Use the correct path - it was found with your find command
+godot_cpp_path = "/home/ben/dungeon/godot-cpp"
+
+# Fix include paths - need to include the parent directory 
+# so that <godot_cpp/classes/node.hpp> works correctly
+# Fix include paths by adding godot-headers
+env.Append(CPPPATH=[
+    godot_cpp_path,  
+    os.path.join(godot_cpp_path, 'include'),
+    os.path.join(godot_cpp_path, 'include', 'core'),
+    os.path.join(godot_cpp_path, 'include', 'gen'),
+    os.path.join(godot_cpp_path, 'gen', 'include'),
+    os.path.join(godot_cpp_path, 'gdextension'),  # Add this line
+    os.path.join(godot_cpp_path, 'godot-headers')  # Add this line
+])
+
+# The actual path to the .a file
+env.Append(LIBPATH=[os.path.join(godot_cpp_path, 'bin')])
+
+# When you specify libraries, the 'lib' prefix and '.a' suffix are automatically handled
+env.Append(LIBS=['godot-cpp.linux.template_debug.x86_64'])
+
+# Add these lines after your existing CPPPATH definition
+
+# Add linker flags to ensure symbols are exported properly
+env.Append(LINKFLAGS=['-Wl,--no-undefined', '-Wl,--as-needed'])
+
+# pick up command‑line args
+platform = ARGUMENTS.get('platform', 'linux')
+target   = ARGUMENTS.get('target',   'template_debug')
+bits     = ARGUMENTS.get('bits',     '64')
+
+# all your .cpp sources
+sources = Glob('src/*.cpp')
+
+# Remove .so extension since SharedLibrary adds it automatically
+libname = f"libgdexample.{platform}.{target}.x86_{bits}.so"
+
+# Make sure the bin directory exists
+if not os.path.exists('bin'):
+    os.makedirs('bin')
+
+# Fix the output path to match what's in gdextension file
+env.SharedLibrary(
+    target = os.path.join('bin', libname),
+    source = sources
+)

@@ -10,10 +10,12 @@ var idle_duration: float = 3.0
 
 @export var swing_cooldown: float = 2.0
 var _cooldown: float = swing_cooldown
+@export var move_range = 300
 
 
 func _ready() -> void:
 	$Animation.play()
+	target_position = Utils.get_random_position_in_range(position, move_range)
 
 func _process(delta : float) -> void:
 	move(delta)
@@ -22,24 +24,24 @@ func _process(delta : float) -> void:
 	super._process(delta)
 
 # attack the player if the cooldown has expired, and if they're close enough
-func attack(delta):
+func attack(delta) -> void:
 	# handle cooldown timer
 
 	# if the cooldown is above 0, subtract delta from it to move it down to 0
 	if _cooldown > 0.0:
 		_cooldown -= delta
 
-	var bodies: Array[Node2D] = check_for_hits()
-	if bodies:
-		for body in bodies:
-			if body is Player:
-				body.hurt(base_damage, Utils.damage_type.PHYSICAL)
-
 	# check if the player is close enough to swing
 	if is_close():
 		# if the cooldown has expired swing
 		if _cooldown <= 0.0:
 			super.swing(2)
+			# attack objects in front
+			var bodies: Array[Node2D] = check_for_hits()
+			if bodies:
+				for body in bodies:
+					if body is Player:
+						body.hurt(base_damage, Utils.damage_type.PHYSICAL)
 			_cooldown = swing_cooldown
 
 func move(delta: float) -> void:
@@ -67,7 +69,6 @@ func move(delta: float) -> void:
 	elif player && destination_reached && idle_timer <= 0:
 		# Generate new random position when idle timer expired
 		destination_reached = false
-		var move_range = 300
 		target_position = Utils.get_random_position_in_range(position, move_range)
 	
 	# Move if we have a target

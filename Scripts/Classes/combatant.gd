@@ -6,6 +6,8 @@ extends "res://Scripts/Classes/npc.gd"
 @export var magic_armor: int = 0
 @export var base_damage: int = 30
 
+signal died
+
 # Swing animation parameters
 var swinging: bool = false
 var swing_progress: float = 0.0
@@ -17,7 +19,7 @@ var target_angle: float = 90.0    # Target angle when swinging
 
 var hit: bool = false
 var hit_timer: float = 0.0
-var hit_timer_reset: float = 3.0
+var hit_timer_reset: float = 1.0
 
 func _ready() -> void:
 	# Set the initial position of the hand
@@ -53,18 +55,19 @@ func ease_out_quad(x: float) -> float:
 	return 1.0 - (1.0 - x) * (1.0 - x)
 
 # Start a weapon swing with natural movement
-func swing(power: float = 1.0):
+func swing(power: float = 1.0) -> void:
 	if has_node("Hand"):
 		swinging = true
 		swing_progress = 0.0
 		# Adjust swing speed based on power
 		swing_speed = 2.0 + power
 
-func die():
+func die() -> void:
 	if hp <= 0:
+		died.emit()
 		queue_free()
 
-func rst_hit():
+func rst_hit() -> void:
 	hit_timer = hit_timer_reset
 	hit = true
 

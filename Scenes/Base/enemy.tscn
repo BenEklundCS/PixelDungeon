@@ -5,8 +5,3 @@
 
 [node name="Enemy" instance=ExtResource("1_v14hu")]
 script = ExtResource("2_1f0kj")
-hp = 50
-mana = 10
-armor = 0
-magic_armor = 0
-base_damage = 30

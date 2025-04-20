@@ -14,14 +14,11 @@ func handle_animation() -> void:
 		$Animation.animation = "idle"
 	else:
 		$Animation.animation = "run"
-
 	$Animation.play()
-	
 	flip($Animation)
 
 func move(delta: float) -> void:
 	# find movement Utils.direction to add to velocity
-	
 	velocity = Vector2.ZERO
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
@@ -48,11 +45,9 @@ func attack() -> void:
 		for body in bodies:
 			if body is Enemy:
 				body.hurt(base_damage, Utils.damage_type.PHYSICAL)
-	pass
 
 func _process(delta: float) -> void:
 	move(delta)
-
 	if swinging:
 		$HurtBox.monitoring = true
 	else:
@@ -60,7 +55,6 @@ func _process(delta: float) -> void:
 
 	if Input.is_action_pressed("attack"):
 		attack()
-
 	super._process(delta)
 
 func _on_hurt_box_body_entered(body:Node2D) -> void:

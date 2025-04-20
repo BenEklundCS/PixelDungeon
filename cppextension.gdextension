@@ -1,0 +1,6 @@
+[configuration]
+entry_symbol = "gdexample_library_init"
+compatibility_minimum = 4.2
+
+[libraries]
+linux.debug.x86_64 = "res://cppextension/bin/libgdexample.linux.template_debug.x86_64.so"
