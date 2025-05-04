@@ -147,6 +147,7 @@ atlas = SubResource("AtlasTexture_8erm5")
 
 [node name="Player" instance=ExtResource("1_3smsa")]
 script = ExtResource("1_hqtel")
+power = 2
 
 [node name="Animation" parent="." index="1"]
 position = Vector2(1, 0)

@@ -14,6 +14,7 @@ mana = 10
 armor = 0
 magic_armor = 0
 base_damage = 30
+power = 2
 
 [node name="Hand" type="Node2D" parent="." index="2"]
 position = Vector2(8, 20)

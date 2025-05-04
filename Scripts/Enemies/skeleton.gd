@@ -35,7 +35,7 @@ func attack(delta) -> void:
 	if is_close():
 		# if the cooldown has expired swing
 		if _cooldown <= 0.0:
-			super.swing(2)
+			super.swing(power)
 			# attack objects in front
 			var bodies: Array[Node2D] = check_for_hits()
 			if bodies:

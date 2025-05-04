@@ -5,6 +5,7 @@ extends "res://Scripts/Classes/npc.gd"
 @export var armor: int = 0
 @export var magic_armor: int = 0
 @export var base_damage: int = 30
+@export var power: int = 2 # swing power modifier
 
 signal died
 

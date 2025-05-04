@@ -39,7 +39,7 @@ func move(delta: float) -> void:
 	move_and_collide(velocity * delta)
 
 func attack() -> void:
-	super.swing(2)
+	super.swing(power)
 	var bodies: Array[Node2D] = check_for_hits()
 	if bodies:
 		for body in bodies:
