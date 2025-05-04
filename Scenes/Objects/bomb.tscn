@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c3ox8qotd5kxq"]
+[gd_scene load_steps=19 format=3 uid="uid://c3ox8qotd5kxq"]
 
 [ext_resource type="Texture2D" uid="uid://16h38jswmfcl" path="res://Effects/02.png" id="1_7j6dd"]
 [ext_resource type="Script" uid="uid://cf0djg6f7g103" path="res://Scripts/Objects/bomb.gd" id="1_l5eqp"]
@@ -49,7 +49,7 @@ region = Rect2(96, 32, 32, 32)
 atlas = ExtResource("3_6auu3")
 region = Rect2(0, 96, 16, 16)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_gufg7"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_mibr1"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -95,13 +95,16 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6auu3"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_22l4e"]
 
-[node name="Bomb" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6auu3"]
+size = Vector2(13, 12)
+
+[node name="Bomb" type="CharacterBody2D"]
 script = ExtResource("1_l5eqp")
 
 [node name="Animation" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_gufg7")
+sprite_frames = SubResource("SpriteFrames_mibr1")
 animation = &"idle"
 speed_scale = 2.0
 
@@ -110,8 +113,14 @@ stream = ExtResource("4_6auu3")
 
 [node name="HurtBox" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+[node name="Box" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(1, -1)
 scale = Vector2(1.5, 1.5)
+shape = SubResource("RectangleShape2D_22l4e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_6auu3")
+disabled = true
 
 [connection signal="animation_finished" from="Animation" to="." method="_on_animation_animation_finished"]

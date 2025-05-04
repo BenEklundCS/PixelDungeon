@@ -31,8 +31,6 @@ func explode():
 	for body in bodies:
 		body.hurt(bomb_damage, Utils.damage_type.PHYSICAL)
 
-
 func _on_animation_animation_finished() -> void:
 	if $Animation.animation == "explode":
 		queue_free()
-		

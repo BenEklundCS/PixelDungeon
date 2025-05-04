@@ -1,8 +1,11 @@
 extends "res://Scripts/Classes/combatant.gd"
 const Enemy = preload("res://Scripts/Classes/enemy.gd")
+const BombLauncher = preload("res://Scripts/Components/bomb_launcher.gd")
 
 var screen_size: Vector2 # game window size
 var attacking: bool = false
+
+@export var throw_velocity: Vector2 = Vector2(10, 10)
 
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
@@ -55,6 +58,14 @@ func _process(delta: float) -> void:
 
 	if Input.is_action_pressed("attack"):
 		attack()
+
+	if Input.is_action_just_pressed("throw_bomb"):
+		var velocity_x = throw_velocity.x if facing == Utils.direction.RIGHT else -throw_velocity.x
+		var velocity_y = throw_velocity.y
+		for node in get_children():
+			if node is BombLauncher:
+				node.launch_bomb(position, Vector2(velocity_x, velocity_y))
+
 	super._process(delta)
 
 func _on_hurt_box_body_entered(body:Node2D) -> void:
