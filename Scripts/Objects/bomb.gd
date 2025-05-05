@@ -1,4 +1,4 @@
-extends Node2D
+extends CharacterBody2D
 # load game Utilities
 var Utils = preload("res://Scripts/utils.gd")
 
@@ -17,12 +17,15 @@ func _process(delta: float) -> void:
 	else:
 		fuse -= delta
 
+	move_and_slide()
+
 func check_for_hits() -> Array[Node2D]:
 	var bodies = $HurtBox.get_overlapping_bodies()
 	return bodies
 
 func explode():
 	exploding = true
+	velocity = Vector2.ZERO
 	$Animation.animation = "explode"
 	$Animation.play()
 	$Audio.play()

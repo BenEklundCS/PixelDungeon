@@ -42,7 +42,6 @@ func respawn() -> void:
 	p.add_child(bomb_launcher)
 	# connect the bomb spawning event to the scene
 	bomb_launcher.connect("spawn_bomb", Callable(self, "_on_bomb_launcher_spawn_bomb"))
-	
 
 	populate_player()
 
