@@ -1,8 +1,6 @@
 extends Node2D
-const Utils = preload("res://Scripts/utils.gd")
-const Bomb = preload("res://Scripts/Objects/bomb.gd")
 var player = preload("res://Scenes/player.tscn")
-var SpellCaster: PackedScene = preload("res://Scenes/Components/SpellCaster.tscn")
+var Bomb_Launcher: PackedScene = preload("res://Scenes/Components/BombLauncher.tscn")
 
 var player_dead: bool = false
 var _player_respawn_timer: float = 0.0
@@ -38,20 +36,18 @@ func respawn() -> void:
 	p.connect("died", Callable(self, "_on_player_died"))
 
 	# instantiate the player's bomb launcher component
-	var spell_caster = SpellCaster.instantiate()
+	var bomb_launcher = Bomb_Launcher.instantiate()
 	# attach the component to the player
-	p.add_child(spell_caster)
+	p.add_child(bomb_launcher)
 	# connect the bomb spawning event to the scene
-	spell_caster.connect("spawn_bomb", Callable(self, "_on_spell_caster_spawn_bomb"))
-	
+	bomb_launcher.connect("spawn_bomb", Callable(self, "_on_bomb_launcher_spawn_bomb"))
+
 	populate_player()
 
 func _on_player_died() -> void:
 	_player_respawn_timer = player_respawn_timer
 	player_dead = true
 
-# spell caster component may notify the game a spell was cast. If the spell includes a projectile
-# this observer is notified and adds the projectile to the scene
-func _on_spell_caster_notify_cast_spell(projectile: Node) -> void:
-	if projectile:
-		add_child(projectile)
+func _on_spell_caster_spawn_object(object: Node) -> void:
+	add_child(object)
+

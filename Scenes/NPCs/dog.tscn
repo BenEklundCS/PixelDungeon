@@ -114,9 +114,6 @@ animations = [{
 [node name="Dog" instance=ExtResource("1_uny1q")]
 script = ExtResource("2_rviwe")
 
-[node name="CollisionShape2D" parent="." index="0"]
-disabled = true
-
 [node name="Animation" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_y1yv2")
 animation = &"right"

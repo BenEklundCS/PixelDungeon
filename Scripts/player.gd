@@ -1,15 +1,22 @@
 extends "res://Scripts/Classes/combatant.gd"
 const Enemy = preload("res://Scripts/Classes/enemy.gd")
-const BombLauncher = preload("res://Scripts/Components/bomb_launcher.gd")
+const SpellCaster = preload("res://Scripts/Components/spell_caster.gd")
 
 var screen_size: Vector2 # game window size
 var attacking: bool = false
+var spell_caster: SpellCaster = null
 
 @export var throw_velocity: Vector2 = Vector2(10, 10)
 
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
 	speed = 650
+	for node in get_children():
+		# init spellcaster
+		if node is SpellCaster:
+			spell_caster = node
+	if spell_caster == null:
+		print("FAILED TO LOAD SPELL_CASTER ON PLAYER")
 	
 func handle_animation() -> void:
 	# change animation
@@ -60,12 +67,8 @@ func _process(delta: float) -> void:
 		attack()
 
 	if Input.is_action_just_pressed("throw_bomb"):
-		var velocity_x = throw_velocity.x if facing == Utils.direction.RIGHT else -throw_velocity.x
-		var velocity_y = throw_velocity.y
-		for node in get_children():
-			if node is BombLauncher:
-				node.launch_bomb(position, Vector2(velocity_x, velocity_y))
-
+		var temp_velocity: Vector2 = Vector2(throw_velocity.x * (1 if facing == Utils.direction.RIGHT else -1), throw_velocity.y)
+		spell_caster.cast_spell(self, "throw_bomb", [position, temp_velocity])
 	super._process(delta)
 
 func _on_hurt_box_body_entered(body:Node2D) -> void:
