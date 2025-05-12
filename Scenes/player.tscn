@@ -147,7 +147,8 @@ atlas = SubResource("AtlasTexture_8erm5")
 
 [node name="Player" instance=ExtResource("1_3smsa")]
 script = ExtResource("1_hqtel")
-throw_velocity = Vector2(10, 10)
+throw_velocity = Vector2(500, -1000)
+spawn_scale = 3
 
 [node name="Animation" parent="." index="1"]
 position = Vector2(1, 0)

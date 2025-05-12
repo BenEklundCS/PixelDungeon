@@ -1,6 +1,6 @@
 extends Node2D
-var player = preload("res://Scenes/player.tscn")
-var Bomb_Launcher: PackedScene = preload("res://Scenes/Components/BombLauncher.tscn")
+var Player = preload("res://Scenes/player.tscn")
+const SpellCaster = preload("res://Scenes/Components/SpellCaster.tscn")
 
 var player_dead: bool = false
 var _player_respawn_timer: float = 0.0
@@ -27,27 +27,27 @@ func populate_player() -> void:
 
 func respawn() -> void:
 	# respawn the player by instantiating a new player object
-	var p = player.instantiate()
+	var player = Player.instantiate()
 	# scale the player correctly
-	p.scale *= respawn_scale
+	player.scale *= respawn_scale
 	# add the player as a child to the scene
-	add_child(p)
+	add_child(player)
 	# connect the player respawn event to the scene
-	p.connect("died", Callable(self, "_on_player_died"))
+	player.connect("died", Callable(self, "_on_player_died"))
 
 	# instantiate the player's bomb launcher component
-	var bomb_launcher = Bomb_Launcher.instantiate()
+	var spell_caster = SpellCaster.instantiate()
 	# attach the component to the player
-	p.add_child(bomb_launcher)
+	player.add_child(spell_caster)
+	player.get_spellcaster() # load the component
 	# connect the bomb spawning event to the scene
-	bomb_launcher.connect("spawn_bomb", Callable(self, "_on_bomb_launcher_spawn_bomb"))
-
+	spell_caster.connect("spawn_object", Callable(self, "_on_spell_caster_spawn_object"))
 	populate_player()
 
 func _on_player_died() -> void:
+	print("Player has died")
 	_player_respawn_timer = player_respawn_timer
 	player_dead = true
 
 func _on_spell_caster_spawn_object(object: Node) -> void:
 	add_child(object)
-

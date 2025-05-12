@@ -11,5 +11,5 @@ func init(spell_cost: int, spell_func: Callable) -> Spell:
 	spell = spell_func
 	return self
 
-func cast(args: Array) -> void:
+func cast(args: Array) -> Node:
 	return spell.callv(args)
