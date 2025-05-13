@@ -43,6 +43,7 @@ func check_for_hits() -> Array[Node2D]:
 
 func explode():
 	exploding = true
+	scale *= 5
 	velocity = Vector2.ZERO
 	$Animation.animation = "explode"
 	$Animation.play()

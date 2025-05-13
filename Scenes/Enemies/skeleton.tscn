@@ -89,12 +89,12 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8erm5"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_l04we"]
 atlas = ExtResource("4_pegji")
 region = Rect2(0.319305, 0, 14.4977, 48.241)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1ek2"]
-atlas = SubResource("AtlasTexture_8erm5")
+atlas = SubResource("AtlasTexture_l04we")
 
 [node name="Skeleton" instance=ExtResource("1_j60fd")]
 script = ExtResource("1_vd5x3")
