@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://c4diplxy5rr67" path="res://Scripts/Enemies/orc.gd" id="2_rmvqa"]
 [ext_resource type="Texture2D" uid="uid://wrsosp31gs73" path="res://Entities/Mobs/Orc Crew/Orc/Idle/Idle-Sheet.png" id="3_l04we"]
 [ext_resource type="Texture2D" uid="uid://2f0pdqy6sa1g" path="res://Entities/Mobs/Orc Crew/Orc/Run/Run-Sheet.png" id="4_l04we"]
-[ext_resource type="Texture2D" uid="uid://db8tk6gjok5nk" path="res://Weapons/Wood/Wood.png" id="4_rmvqa"]
+[ext_resource type="Texture2D" uid="uid://1apr3u1yi4p0" path="res://Weapons/Bone/Bone.png" id="5_l04we"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tq37w"]
 atlas = ExtResource("3_l04we")
@@ -90,7 +90,7 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l04we"]
-atlas = ExtResource("4_rmvqa")
+atlas = ExtResource("5_l04we")
 region = Rect2(0.319305, 0, 14.4977, 48.241)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1ek2"]
@@ -99,14 +99,17 @@ atlas = SubResource("AtlasTexture_l04we")
 [node name="Orc" instance=ExtResource("1_3wnfw")]
 script = ExtResource("2_rmvqa")
 swing_cooldown = 2.0
-move_range = 300
+move_range = 100
+attack_range = 100
+speed = 700
 
 [node name="Animation" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_q4xed")
-animation = &"run_base"
+animation = &"idle_base"
 
 [node name="Hand" parent="." index="2"]
 position = Vector2(9, 2)
 
 [node name="Weapon" parent="Hand" index="0"]
 texture = SubResource("AtlasTexture_f1ek2")
+flip_h = true

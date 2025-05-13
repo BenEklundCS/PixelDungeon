@@ -39,7 +39,6 @@ func respawn() -> void:
 	var spell_caster = SpellCaster.instantiate()
 	# attach the component to the player
 	player.add_child(spell_caster)
-	player.get_spellcaster() # load the component
 	# connect the bomb spawning event to the scene
 	spell_caster.connect("spawn_object", Callable(self, "_on_spell_caster_spawn_object"))
 	populate_player()

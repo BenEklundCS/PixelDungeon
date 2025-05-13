@@ -22,12 +22,8 @@ func cast_spell(combatant: Combatant, spell_name: String, args: Array) -> void:
 		if combatant.mana >= spell.cost:
 			var spawned_object: Node = spell.cast(args)
 			combatant.mana -= spell.cost
+			print(spawned_object)
 			spawn_object.emit(spawned_object)
 
 func register_spell(spell_name: String, spell: Spell):
 	spells.set(spell_name, spell)
-
-
-
-
-	
