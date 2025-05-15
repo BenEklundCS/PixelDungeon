@@ -1,10 +1,12 @@
-[gd_scene load_steps=19 format=3 uid="uid://b3q16a1i70ne2"]
+[gd_scene load_steps=21 format=3 uid="uid://b3q16a1i70ne2"]
 
 [ext_resource type="PackedScene" uid="uid://d02r463dsxqi7" path="res://Scenes/Base/enemy.tscn" id="1_3wnfw"]
 [ext_resource type="Script" uid="uid://c4diplxy5rr67" path="res://Scripts/Enemies/orc.gd" id="2_rmvqa"]
 [ext_resource type="Texture2D" uid="uid://wrsosp31gs73" path="res://Entities/Mobs/Orc Crew/Orc/Idle/Idle-Sheet.png" id="3_l04we"]
 [ext_resource type="Texture2D" uid="uid://2f0pdqy6sa1g" path="res://Entities/Mobs/Orc Crew/Orc/Run/Run-Sheet.png" id="4_l04we"]
 [ext_resource type="Texture2D" uid="uid://1apr3u1yi4p0" path="res://Weapons/Bone/Bone.png" id="5_l04we"]
+[ext_resource type="AudioStream" uid="uid://d4c6gu8rf62a2" path="res://SFX/Monsters/orc.wav" id="6_tq37w"]
+[ext_resource type="AudioStream" uid="uid://cqpoejqbsj204" path="res://SFX/Monsters/orc_die.wav" id="7_ny6sd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tq37w"]
 atlas = ExtResource("3_l04we")
@@ -100,7 +102,6 @@ atlas = SubResource("AtlasTexture_l04we")
 script = ExtResource("2_rmvqa")
 swing_cooldown = 2.0
 move_range = 100
-attack_range = 100
 speed = 700
 
 [node name="Animation" parent="." index="1"]
@@ -113,3 +114,11 @@ position = Vector2(9, 2)
 [node name="Weapon" parent="Hand" index="0"]
 texture = SubResource("AtlasTexture_f1ek2")
 flip_h = true
+
+[node name="OrcSound" type="AudioStreamPlayer2D" parent="." index="7"]
+stream = ExtResource("6_tq37w")
+
+[node name="OrcDieSound" type="AudioStreamPlayer2D" parent="." index="8"]
+stream = ExtResource("7_ny6sd")
+
+[connection signal="died" from="." to="." method="_on_died"]

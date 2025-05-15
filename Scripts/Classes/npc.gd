@@ -12,11 +12,21 @@ var Utils = preload("res://Scripts/utils.gd")
 var facing: int = Utils.direction.RIGHT # Default direction
 # current speed of the character factored into their movement
 @export var speed: int = 200 # Default speed
+@export var min_noise_rand_range: float = 5
+@export var max_noise_rand_range: float = 60
 
+var noise_counter: float = randf_range(min_noise_rand_range, max_noise_rand_range)
 
+func should_make_noise(delta : float) -> bool:
+	noise_counter -= delta
+	if noise_counter <= 0:
+		noise_counter = randf_range(min_noise_rand_range, max_noise_rand_range)
+		return true
+	else:
+		return false
 
 # Base movement functionality for moving towards a position
-func move_towards(target_position: Vector2, delta: float, up_animations: bool) -> void:
+func move_towards(target_position: Vector2, _delta: float, up_animations: bool) -> void:
 	velocity = Vector2.ZERO
 
 	var y_distance_greater_than_x = abs(position.x - target_position.x) < abs(position.y - target_position.y)
@@ -40,7 +50,7 @@ func move_towards(target_position: Vector2, delta: float, up_animations: bool) -
 
 	handle_animation()
 
-	move_and_collide(velocity * delta)
+	move_and_slide()
 
 
 # Override this in child classes

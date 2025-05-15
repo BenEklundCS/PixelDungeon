@@ -11,6 +11,8 @@ func _ready() -> void:
 func _process(delta : float) -> void:
 	super.basic_move(delta)
 	attack(delta)
+	if should_make_noise(delta):
+		$OrcSound.play()
 	super._process(delta)
 
 # attack the player if the cooldown has expired, and if they're close enough
@@ -26,12 +28,14 @@ func attack(delta) -> void:
 		# if the cooldown has expired swing
 		if _cooldown <= 0.0:
 			super.swing(power)
+			$SwordAttack.play()
 			# attack objects in front
 			var bodies: Array[Node2D] = check_for_hits()
 			if bodies:
 				for body in bodies:
 					if body is Player:
 						body.hurt(base_damage, Utils.damage_type.PHYSICAL)
+						$SwordAttackHit.play()	
 			_cooldown = swing_cooldown
 
 # Override the base NPC animation function
@@ -43,3 +47,9 @@ func handle_animation() -> void:
 		$Animation.animation = "run_base"
 	$Animation.play()
 	flip($Animation)
+
+func _on_died() -> void:
+	var sfx = $OrcDieSound.duplicate() as AudioStreamPlayer2D
+	sfx.position = position
+	get_tree().root.add_child(sfx)
+	sfx.play()

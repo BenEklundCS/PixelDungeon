@@ -149,6 +149,7 @@ atlas = SubResource("AtlasTexture_8erm5")
 script = ExtResource("1_hqtel")
 throw_velocity = Vector2(500, -1000)
 spawn_scale = 3
+coins = 0
 
 [node name="Animation" parent="." index="1"]
 position = Vector2(1, 0)
@@ -169,7 +170,11 @@ position = Vector2(10, 4)
 [node name="Weapon" parent="Hand" index="0"]
 texture = SubResource("AtlasTexture_f1ek2")
 
+[node name="CollisionShape2D" parent="HitBox" index="0"]
+position = Vector2(0, 2)
+
 [node name="HurtBox" parent="." index="6"]
 collision_layer = 2
 
+[connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]

@@ -1,10 +1,11 @@
-[gd_scene load_steps=19 format=3 uid="uid://nw6rghr4sbia"]
+[gd_scene load_steps=20 format=3 uid="uid://nw6rghr4sbia"]
 
 [ext_resource type="PackedScene" uid="uid://d02r463dsxqi7" path="res://Scenes/Base/enemy.tscn" id="1_j60fd"]
 [ext_resource type="Texture2D" uid="uid://xm77bgap0q6x" path="res://Entities/Mobs/Skeleton Crew/Skeleton - Base/Idle/Idle-Sheet.png" id="1_sfdtf"]
 [ext_resource type="Script" uid="uid://k3od3xv52fr6" path="res://Scripts/Enemies/skeleton.gd" id="1_vd5x3"]
 [ext_resource type="Texture2D" uid="uid://uqh3ekfyae6b" path="res://Entities/Mobs/Skeleton Crew/Skeleton - Base/Run/Run-Sheet.png" id="3_pegji"]
 [ext_resource type="Texture2D" uid="uid://db8tk6gjok5nk" path="res://Weapons/Wood/Wood.png" id="4_pegji"]
+[ext_resource type="AudioStream" uid="uid://cgqyjvyovw1r0" path="res://SFX/Monsters/bones.mp3" id="6_eiu2b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vd5x3"]
 atlas = ExtResource("1_sfdtf")
@@ -99,8 +100,6 @@ atlas = SubResource("AtlasTexture_l04we")
 [node name="Skeleton" instance=ExtResource("1_j60fd")]
 script = ExtResource("1_vd5x3")
 swing_cooldown = 2.0
-move_range = 300
-attack_range = 100
 base_damage = 15
 
 [node name="Animation" parent="." index="1"]
@@ -119,5 +118,8 @@ collision_layer = 2
 
 [node name="CollisionShape2D" parent="HurtBox" index="0"]
 position = Vector2(27, 0)
+
+[node name="SkeletonSound" type="AudioStreamPlayer2D" parent="." index="7"]
+stream = ExtResource("6_eiu2b")
 
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]

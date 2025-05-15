@@ -4,6 +4,7 @@ const SpellCaster = preload("res://Scripts/Components/spell_caster.gd")
 const Bomb: PackedScene = preload("res://Scenes/Objects/bomb.tscn")
 const Skeleton: PackedScene = preload("res://Scenes/Enemies/skeleton.tscn")
 const FlameStrike: PackedScene = preload("res://Scenes/Objects/flame_strike.tscn")
+const Coin = preload("res://Scripts/Objects/coin.gd")
 
 var screen_size: Vector2 # game window size
 var attacking: bool = false
@@ -11,6 +12,7 @@ var spell_caster: SpellCaster = null
 
 @export var throw_velocity: Vector2 = Vector2(500, -1000)
 @export var spawn_scale: int = 3
+@export var coins: int = 0
 
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
@@ -68,11 +70,13 @@ func move(delta: float) -> void:
 
 func attack() -> void:
 	super.swing(power)
+	$SwordAttack.play()
 	var bodies: Array[Node2D] = check_for_hits()
 	if bodies:
 		for body in bodies:
 			if body is Enemy:
 				body.hurt(base_damage, Utils.damage_type.PHYSICAL)
+				$SwordAttackHit.play()
 
 func handle_player_input():
 	if Input.is_action_pressed("attack"):
@@ -140,3 +144,9 @@ func register_player_spells():
 
 func _on_hurt_box_body_entered(_body:Node2D) -> void:
 	pass
+
+
+func _on_hit_box_area_entered(area: Area2D) -> void:
+	if area.get_script() == Coin:
+		area.queue_free()
+		coins += 1

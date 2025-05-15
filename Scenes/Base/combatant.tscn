@@ -1,11 +1,29 @@
-[gd_scene load_steps=5 format=3 uid="uid://daf516tuskaix"]
+[gd_scene load_steps=13 format=3 uid="uid://daf516tuskaix"]
 
 [ext_resource type="PackedScene" uid="uid://cqud15ohaeig4" path="res://Scenes/Base/npc.tscn" id="1_xnin6"]
 [ext_resource type="Script" uid="uid://dja3medjo3brw" path="res://Scripts/Classes/combatant.gd" id="2_eavhv"]
+[ext_resource type="AudioStream" uid="uid://cy666g7e0nyg6" path="res://SFX/WAV Files/SFX/Attacks/Sword Attacks Hits and Blocks/Sword Attack 1.wav" id="3_lsec7"]
+[ext_resource type="AudioStream" uid="uid://ct7esfy6cwa4p" path="res://SFX/WAV Files/SFX/Attacks/Sword Attacks Hits and Blocks/Sword Attack 2.wav" id="4_xto3n"]
+[ext_resource type="AudioStream" uid="uid://dtpa2vsc3bpuf" path="res://SFX/WAV Files/SFX/Attacks/Sword Attacks Hits and Blocks/Sword Attack 3.wav" id="5_cjr8q"]
+[ext_resource type="AudioStream" uid="uid://cyrc2uk8b6l1i" path="res://SFX/WAV Files/SFX/Attacks/Sword Attacks Hits and Blocks/Sword Impact Hit 1.wav" id="6_8rsqp"]
+[ext_resource type="AudioStream" uid="uid://gdmefc0y5gje" path="res://SFX/WAV Files/SFX/Attacks/Sword Attacks Hits and Blocks/Sword Impact Hit 2.wav" id="7_1y225"]
+[ext_resource type="AudioStream" uid="uid://fj2vbq3a8lof" path="res://SFX/WAV Files/SFX/Attacks/Sword Attacks Hits and Blocks/Sword Impact Hit 3.wav" id="8_ncdl4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eavhv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oyagx"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_5fbcp"]
+streams_count = 3
+stream_0/stream = ExtResource("3_lsec7")
+stream_1/stream = ExtResource("4_xto3n")
+stream_2/stream = ExtResource("5_cjr8q")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_42wyx"]
+streams_count = 3
+stream_0/stream = ExtResource("6_8rsqp")
+stream_1/stream = ExtResource("7_1y225")
+stream_2/stream = ExtResource("8_ncdl4")
 
 [node name="Combatant" instance=ExtResource("1_xnin6")]
 script = ExtResource("2_eavhv")
@@ -36,3 +54,9 @@ shape = SubResource("RectangleShape2D_eavhv")
 position = Vector2(26, 0)
 scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_oyagx")
+
+[node name="SwordAttack" type="AudioStreamPlayer2D" parent="." index="5"]
+stream = SubResource("AudioStreamRandomizer_5fbcp")
+
+[node name="SwordAttackHit" type="AudioStreamPlayer2D" parent="." index="6"]
+stream = SubResource("AudioStreamRandomizer_42wyx")
