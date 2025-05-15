@@ -125,7 +125,7 @@ move_range = 300
 [node name="Animation" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_odawd")
 animation = &"idle"
-frame_progress = 0.212815
+frame_progress = 0.612685
 
 [node name="Label" type="Label" parent="." index="2"]
 offset_left = -22.0

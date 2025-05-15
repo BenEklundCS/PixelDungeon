@@ -8,8 +8,12 @@ var target_position: Vector2 = Vector2(0, 0)
 var destination_reached: bool = false
 var idle_timer: float = 0.0
 var idle_duration: float = 3.0
-@export var move_range = 300
-@export var attack_range = 100
+@export var move_range: int = 300
+@export var attack_range: int = 100
+@export var max_coins_dropped: int = 15
+var coin_base_offset: int = 50
+
+var Coin: PackedScene = preload("res://Scenes/Objects/coin.tscn")
 
 func _ready() -> void:
 	target_position = Utils.get_random_position_in_range(position, move_range)
@@ -19,6 +23,26 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	super._process(delta)
 	pass
+
+# override the die method on enemies such that they drop coins
+func die() -> void:
+	if hp <= 0:
+		spawn_coins()
+		# emit died and free the node
+		died.emit()
+		queue_free()	
+
+func spawn_coins() -> void:
+	var how_many = randi_range(1, max_coins_dropped)
+	for _i in how_many:
+		var rand_offset = Vector2(
+			randi_range(-coin_base_offset, coin_base_offset), 
+			randi_range(-coin_base_offset, coin_base_offset))
+		var coin = Coin.instantiate()
+		coin.position = position + rand_offset
+		coin.scale *= 3
+		get_tree().root.add_child(coin)
+
 
 func in_range() -> bool:
 	return player && position.distance_to(player.position) < 500 && position.distance_to(player.position) > 150
