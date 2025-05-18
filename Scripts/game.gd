@@ -5,9 +5,13 @@ const SpellCaster = preload("res://Scenes/Components/SpellCaster.tscn")
 var player_dead: bool = false
 var _player_respawn_timer: float = 0.0
 @export var player_respawn_timer: float = 3.0
+@export var spawn_player_x: int = 1390.0
+@export var spawn_player_y: int = 1168.0
+@export var spawn_player_scale: int = 3
 var respawn_scale: float = 1.0
 
 func _ready():
+	initialize_player()
 	# if an object implements player storage, pass it the player
 	populate_player()
 	respawn_scale = $Player.scale.x
@@ -19,6 +23,22 @@ func _process(_delta):
 		if player_dead:
 			respawn()
 			player_dead = false
+
+func initialize_player() -> void:
+	# spawn the player and add them to globals
+	if Global.player_instance == null:
+		var player = Global.player_scene.instantiate()
+		var spell_caster = SpellCaster.instantiate()
+		player.add_child(spell_caster)
+		player.scale *= spawn_player_scale
+		player.connect("died", Callable(self, "_on_player_died"))
+		spell_caster.connect("spawn_object", Callable(self, "_on_spell_caster_spawn_object"))
+		Global.player_instance = player
+		add_child(player)
+		player.global_position = Vector2(spawn_player_x, spawn_player_y) # starting position
+	else:
+		add_child(Global.player_instance)
+		Global.player_instance.global_position = Vector2(spawn_player_x, spawn_player_y)
 
 func populate_player() -> void:
 	for _i in self.get_children():

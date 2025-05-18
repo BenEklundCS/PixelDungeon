@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dp241bu5md0at"]
+[gd_scene load_steps=10 format=3 uid="uid://dp241bu5md0at"]
 
-[ext_resource type="Script" uid="uid://bo2hn4pq0v6wa" path="res://Scripts/door.gd" id="1_v6xrn"]
+[ext_resource type="Script" uid="uid://bo2hn4pq0v6wa" path="res://Scripts/Objects/door.gd" id="1_v6xrn"]
 [ext_resource type="Texture2D" uid="uid://ce8h5f60vdwcb" path="res://Environment/Tilesets/Dungeon_Tiles.png" id="2_0phs7"]
+[ext_resource type="AudioStream" uid="uid://cuw40haq8bdlq" path="res://SFX/WAV Files/SFX/Doors Gates and Chests/Door Open 1.wav" id="3_ynea2"]
+[ext_resource type="AudioStream" uid="uid://cikqbbpdbte6e" path="res://SFX/WAV Files/SFX/Doors Gates and Chests/Door Close 1.wav" id="4_gc7pt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_50cdl"]
 texture = ExtResource("2_0phs7")
@@ -604,7 +606,7 @@ texture = ExtResource("2_0phs7")
 sources/0 = SubResource("TileSetAtlasSource_4xadh")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v6xrn"]
-size = Vector2(32, 32)
+size = Vector2(31.5, 32)
 
 [node name="Door" type="Node2D"]
 script = ExtResource("1_v6xrn")
@@ -619,12 +621,19 @@ tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 6, 0, 0, 0, 0, 0, 
 tile_set = SubResource("TileSet_6hwww")
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1, 1)
 collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(16, 16)
+position = Vector2(15.25, 15)
 shape = SubResource("RectangleShape2D_v6xrn")
+
+[node name="DoorOpenedAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ynea2")
+
+[node name="DoorClosedAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_gc7pt")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

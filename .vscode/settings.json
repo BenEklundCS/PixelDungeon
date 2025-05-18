@@ -1,3 +1,4 @@
 {
-    "godotTools.editorPath.godot4": "/home/ben/Godot/Godot_v4.4.1-stable_linux.x86_64"
+    "godotTools.editorPath.godot4": "/home/ben/Godot/Godot_v4.4.1-stable_linux.x86_64",
+    "cmake.sourceDirectory": "/home/ben/dungeon/godot-cpp"
 }

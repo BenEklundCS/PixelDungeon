@@ -146,6 +146,8 @@ region = Rect2(0.319305, 0, 14.4977, 48.241)
 atlas = SubResource("AtlasTexture_8erm5")
 
 [node name="Player" instance=ExtResource("1_3smsa")]
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_hqtel")
 throw_velocity = Vector2(500, -1000)
 spawn_scale = 3
@@ -171,7 +173,7 @@ position = Vector2(10, 4)
 texture = SubResource("AtlasTexture_f1ek2")
 
 [node name="CollisionShape2D" parent="HitBox" index="0"]
-position = Vector2(0, 2)
+position = Vector2(0, 1.5)
 
 [node name="HurtBox" parent="." index="6"]
 collision_layer = 2

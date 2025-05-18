@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=4 uid="uid://borimqbrgxvdd"]
+[gd_scene load_steps=16 format=4 uid="uid://borimqbrgxvdd"]
 
 [ext_resource type="Texture2D" uid="uid://bkaw1mepjvi7y" path="res://Environment/Structures/Buildings/Walls.png" id="1_68721"]
+[ext_resource type="Script" uid="uid://dt15ft670pk0g" path="res://Scripts/Objects/house.gd" id="1_q3dog"]
 [ext_resource type="Texture2D" uid="uid://db2dtk07x0jqo" path="res://Environment/Structures/Buildings/Roofs.png" id="2_mu17e"]
 [ext_resource type="Texture2D" uid="uid://dbmekn7n3axmr" path="res://Environment/Structures/Buildings/Props.png" id="3_kn2ne"]
-[ext_resource type="PackedScene" uid="uid://dp241bu5md0at" path="res://Scenes/door.tscn" id="4_o4k3h"]
+[ext_resource type="PackedScene" uid="uid://dp241bu5md0at" path="res://Scenes/Objects/door.tscn" id="4_o4k3h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n837q"]
 texture = ExtResource("1_68721")
@@ -3263,6 +3264,7 @@ size = Vector2(159, 87)
 
 [node name="House1" type="StaticBody2D"]
 y_sort_enabled = true
+script = ExtResource("1_q3dog")
 
 [node name="House" type="TileMapLayer" parent="."]
 position = Vector2(0, -1)
@@ -3285,3 +3287,5 @@ position = Vector2(112, 95)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(81, 80)
 shape = SubResource("RectangleShape2D_68721")
+
+[connection signal="door_entered" from="Door" to="." method="_on_door_door_entered"]
