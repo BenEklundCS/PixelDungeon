@@ -17,6 +17,7 @@ var spell_caster: SpellCaster = null
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
 	speed = 650
+	$CanvasLayer/UI.set_player(self)
 	# call deferred to call after all children have been added
 	# to the scene tree. Avoids false failure of loading spell caster
 	call_deferred("get_spellcaster")

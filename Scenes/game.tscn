@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=4 uid="uid://chvysno62hbvn"]
+[gd_scene load_steps=46 format=4 uid="uid://chvysno62hbvn"]
 
 [ext_resource type="Texture2D" uid="uid://knv6quoodxbb" path="res://Environment/Tilesets/Floors_Tiles.png" id="1_1l0tm"]
 [ext_resource type="Texture2D" uid="uid://boqa2qhcw0lvg" path="res://Environment/Tilesets/Wall_Tiles.png" id="2_v158k"]
@@ -16,7 +16,6 @@
 [ext_resource type="Texture2D" uid="uid://bw8lhlhfw22sw" path="res://Environment/Props/Static/Furniture.png" id="11_7nbq1"]
 [ext_resource type="Texture2D" uid="uid://xy552kjpbacy" path="res://Environment/Props/Static/Farm.png" id="12_exi56"]
 [ext_resource type="Script" uid="uid://qg12jsrcq7ef" path="res://Scripts/game.gd" id="14_exi56"]
-[ext_resource type="PackedScene" uid="uid://p7tg15fulqop" path="res://Scenes/UI/ui.tscn" id="17_iivbl"]
 [ext_resource type="AudioStream" uid="uid://4odjcgm57gee" path="res://Packlist/Theme - Laying in Highwind.ogg" id="19_iivbl"]
 [ext_resource type="PackedScene" uid="uid://b3q16a1i70ne2" path="res://Scenes/Enemies/orc.tscn" id="20_exi56"]
 [ext_resource type="PackedScene" uid="uid://r6vsqyq0q8dr" path="res://Scenes/NPCs/Johan.tscn" id="21_vm72l"]
@@ -4160,10 +4159,6 @@ max_coins_dropped = 15
 position = Vector2(1187, 1097)
 scale = Vector2(3, 3)
 speed = 400
-
-[node name="UI" parent="Game" instance=ExtResource("17_iivbl")]
-position = Vector2(-3487, -1916)
-scale = Vector2(3, 3)
 
 [node name="Orc" parent="Game" instance=ExtResource("20_exi56")]
 position = Vector2(-3512, 1903)

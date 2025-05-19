@@ -10,7 +10,7 @@ func _ready() -> void:
 	
 func _process(_delta: float) -> void:
 	if player:
-		position = player.position
+		#scale = player.scale
 		hp = player.hp
 		mana = player.mana
 		coins = player.coins

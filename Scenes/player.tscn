@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://7uxdkwatij20"]
+[gd_scene load_steps=28 format=3 uid="uid://7uxdkwatij20"]
 
 [ext_resource type="PackedScene" uid="uid://daf516tuskaix" path="res://Scenes/Base/combatant.tscn" id="1_3smsa"]
 [ext_resource type="Script" uid="uid://b375r5stvsgg3" path="res://Scripts/player.gd" id="1_hqtel"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b5wv2uia5od61" path="res://Entities/Npc's/Knight/Run/run_sheet.png" id="4_2hs0m"]
 [ext_resource type="Texture2D" uid="uid://db8tk6gjok5nk" path="res://Weapons/Wood/Wood.png" id="5_fkybt"]
 [ext_resource type="AudioStream" uid="uid://csfaf4jgjakmq" path="res://SFX/WAV Files/SFX/Footsteps/Dirt/Dirt Walk 1.wav" id="6_x3wgy"]
+[ext_resource type="PackedScene" uid="uid://p7tg15fulqop" path="res://Scenes/UI/ui.tscn" id="8_8erm5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jxqw"]
 atlas = ExtResource("2_sweqy")
@@ -177,6 +178,11 @@ position = Vector2(0, 1.5)
 
 [node name="HurtBox" parent="." index="6"]
 collision_layer = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="9"]
+
+[node name="UI" parent="CanvasLayer" index="0" instance=ExtResource("8_8erm5")]
+position = Vector2(960, 586)
 
 [connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
