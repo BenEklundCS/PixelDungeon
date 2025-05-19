@@ -4035,6 +4035,7 @@ fog_enabled = true
 
 [node name="Root" type="Node2D"]
 y_sort_enabled = true
+metadata/_edit_vertical_guides_ = [1060.0]
 
 [node name="WorldMap" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -4071,7 +4072,7 @@ tile_map_data = PackedByteArray("AAALAAgAAAAFABgAAAALAAkAAAAFABoAAAAMAAYAAAAEABk
 tile_set = SubResource("TileSet_85qyi")
 
 [node name="House1" parent="WorldMap" instance=ExtResource("7_rfjv2")]
-position = Vector2(8400, 7360)
+position = Vector2(8401, 7361)
 scale = Vector2(3, 3)
 scene = "res://Scenes/Interiors/JohansHouse.tscn"
 
