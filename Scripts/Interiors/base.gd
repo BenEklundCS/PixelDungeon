@@ -15,11 +15,16 @@ var respawn_scale: float = 1.0
 func _ready():
 	respawn_scale = spawn_player_scale
 	initialize_player()
-	populate_player()
 
 func _process(delta: float) -> void:
+	# if the player is alive, populate child objects with the current player every frame
+	# this support spawning mobs later, and ensuring they still get the player instance
+	if Global.player_instance:
+		populate_player()
+	# handling respawn timer
 	if _player_respawn_timer > 0.0:
 		_player_respawn_timer -= delta
+	# respawn the player if player_dead is true
 	elif player_dead:
 		respawn()
 		player_dead = false
@@ -58,6 +63,7 @@ func respawn():
 
 	player.connect("died", Callable(self, "_on_player_died"))
 	populate_player()
+	print("Player has respawned")
 
 func setup_player_in_scene():
 	var player = Global.player_instance

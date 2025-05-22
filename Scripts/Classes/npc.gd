@@ -38,11 +38,11 @@ func move_towards(target_position: Vector2, _delta: float, up_animations: bool) 
 		velocity.x -= 1
 		facing = Utils.direction.LEFT
 	if target_position.y > position.y:
-		if up_animations && y_distance_greater_than_x:
+		if up_animations and y_distance_greater_than_x:
 			facing = Utils.direction.DOWN
 		velocity.y += 1
 	if target_position.y < position.y:
-		if up_animations && y_distance_greater_than_x:
+		if up_animations and y_distance_greater_than_x:
 			facing = Utils.direction.UP
 		velocity.y -= 1
 

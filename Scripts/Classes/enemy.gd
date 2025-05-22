@@ -11,12 +11,17 @@ var idle_duration: float = 3.0
 @export var move_range: int = 300
 @export var attack_range: int = 100
 @export var max_coins_dropped: int = 15
+@export var enemy_id: String
 var coin_base_offset: int = 50
+
+signal died_with_id(id: String)
 
 var Coin: PackedScene = preload("res://Scenes/Objects/coin.tscn")
 
 func _ready() -> void:
 	target_position = Utils.get_random_position_in_range(position, move_range)
+	if Global.defeated_enemies.has(enemy_id):
+		queue_free()
 	super._ready()
 	pass
 
@@ -30,6 +35,8 @@ func die() -> void:
 		spawn_coins()
 		# emit died and free the node
 		died.emit()
+		died_with_id.emit(enemy_id)
+		Global.defeated_enemies[enemy_id] = true
 		queue_free()	
 
 func spawn_coins() -> void:

@@ -182,7 +182,8 @@ collision_layer = 2
 [node name="CanvasLayer" type="CanvasLayer" parent="." index="9"]
 
 [node name="UI" parent="CanvasLayer" index="0" instance=ExtResource("8_8erm5")]
-position = Vector2(960, 586)
+position = Vector2(951, 553)
+scale = Vector2(1.5, 1.5)
 
 [connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
