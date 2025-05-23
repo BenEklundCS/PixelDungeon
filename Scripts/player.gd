@@ -30,6 +30,9 @@ func _process(delta: float) -> void:
 	
 	super._process(delta)
 
+func set_light(val: bool):
+	$PointLight2D.enabled = val
+
 func get_spellcaster():
 	for node in get_children():
 		# init spellcaster

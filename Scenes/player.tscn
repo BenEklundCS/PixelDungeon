@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://7uxdkwatij20"]
+[gd_scene load_steps=30 format=3 uid="uid://7uxdkwatij20"]
 
 [ext_resource type="PackedScene" uid="uid://daf516tuskaix" path="res://Scenes/Base/combatant.tscn" id="1_3smsa"]
 [ext_resource type="Script" uid="uid://b375r5stvsgg3" path="res://Scripts/player.gd" id="1_hqtel"]
@@ -146,6 +146,15 @@ region = Rect2(0.319305, 0, 14.4977, 48.241)
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1ek2"]
 atlas = SubResource("AtlasTexture_8erm5")
 
+[sub_resource type="Gradient" id="Gradient_5qe3b"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8erm5"]
+gradient = SubResource("Gradient_5qe3b")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
 [node name="Player" instance=ExtResource("1_3smsa")]
 collision_layer = 3
 collision_mask = 3
@@ -184,6 +193,13 @@ collision_layer = 2
 [node name="UI" parent="CanvasLayer" index="0" instance=ExtResource("8_8erm5")]
 position = Vector2(951, 553)
 scale = Vector2(1.5, 1.5)
+
+[node name="PointLight2D" type="PointLight2D" parent="." index="10"]
+position = Vector2(0.00012207, 0)
+scale = Vector2(8.57031, 7.14062)
+color = Color(0.73709, 0.711182, 0.260541, 1)
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_8erm5")
 
 [connection signal="area_entered" from="HitBox" to="." method="_on_hit_box_area_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
